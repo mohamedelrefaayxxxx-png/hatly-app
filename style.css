@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #333;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 500px;
+  margin: auto;
+  min-height: 100vh;
+  background: #fff;
+}
+
+header {
+  background: #8b1235;
+  color: white;
+  padding: 24px 20px;
+  border-radius: 0 0 25px 25px;
+}
+
+header h1 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 15px;
+  opacity: 0.95;
+}
+
+.content {
+  padding: 20px;
+}
+
+.address {
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.address-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.address-text {
+  color: #777;
+  font-size: 14px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.change-address {
+  color: #8b1235;
+  background: #fff;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.search {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 17px;
+  text-align: right;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.service:hover {
+  border-color: #8b1235;
+}
+
+.order-btn {
+  width: 100%;
+  background: #8b1235;
+  color: white;
+  padding: 17px;
+  border-radius: 15px;
+  margin-top: 22px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.order-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.back {
+  background: transparent;
+  color: #8b1235;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #8b1235;
+}
+
+.form-group {
+  margin-bottom: 17px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.input,
+textarea,
+select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 15px;
+  background: white;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.location-box {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  background: #fafafa;
+}
+
+.location-box strong {
+  color: #8b1235;
+}
+
+.price-box {
+  background: #fafafa;
+  border-radius: 15px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.total {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #8b1235;
+}
+
+.payment-option {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.payment-option input {
+  margin-left: 8px;
+}
+
+.order-card {
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 17px;
+  margin-bottom: 12px;
+}
+
+.order-card h3 {
+  color: #8b1235;
+  margin-bottom: 10px;
+}
+
+.status {
+  display: inline-block;
+  background: #f8e8ed;
+  color: #8b1235;
+  padding: 7px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.map {
+  height: 250px;
+  border-radius: 18px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.driver {
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.driver-photo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-buttons button {
+  flex: 1;
+  padding: 14px;
+  border-radius: 12px;
+  background: #8b1235;
+  color: white;
+}
+
+.nav {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  border-top: 1px solid #eee;
+  padding: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav button {
+  background: transparent;
+  color: #777;
+  font-size: 13px;
+}
+
+.nav button.active {
+  color: #8b1235;
+  font-weight: bold;
+    }
